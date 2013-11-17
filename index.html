@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html id="header">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 		<title>Andrew Shield</title>
+		<link rel="stylesheet" href="foundation.css">
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
 
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script type="text/javascript" src="scripts/script.js"></script>
 
 	<script src="scripts/waypoints.min.js"></script>
 	<script src="scripts/waypoints-sticky.min.js"></script>
+	<script type="text/javascript" src="foundation.js"></script>
+	<script type="text/javascript" src="foundation.topbar.js"></script>
+	
 
 	</head>
 <body>
@@ -29,16 +34,32 @@
 
 </header>
 
-<nav class="nav">
-	<ul>
-		<li><a href="#">andrew shield</a></li>		
-		<li class="menu"><a href="#contact">contact</a></li>
-		<li class="menu"><a href="#about">about</a></li>
+<nav class="nav top-bar">
+	
+	  <ul class="title-area">
+    <!-- Title Area -->
+    <li class="name">
+      <h1><a href="#header">AS</a></h1>
+    </li>
+    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href=""><span>Menu</span></a></li>
+  </ul>
+
+ <section class="top-bar-section">
+	
+	<ul class="right">
+		<!-- <li><a href="#header">andrew shield</a></li> -->
 		<li class="menu"><a href="#thumbnails">projects</a></li>
+		<li class="menu"><a href="#about">about</a></li>
+		<li class="menu"><a href="#contact">contact</a></li>
+		
 	
 </ul>
-</nav></a>
+</section>
+</nav>
 	<div class="projects">
+
+	
 		
 <div id="thumbnails">
 	<div id="thumbnail-1" class="thumbnail-containers">
@@ -97,6 +118,7 @@
 	</div>
 
 	<div id="contact">
+		<h3>get in touch</h3>
 		<div class="icons">
 		<a id="mail" class="social-links" href="mailto:andrewcshield@gmail.com"></a>
 		<a id="skype" class="social-links" href="#" target="_blank"></a>

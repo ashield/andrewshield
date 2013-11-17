@@ -57,15 +57,8 @@ nav {
 }
 
 ul {
-	padding: 0 178px;
+	padding: 0 11%;
 
-}
-
-
-
-ul li.menu {
-	float: right;
-	
 }
 
 
@@ -88,6 +81,15 @@ nav ul li a {
 	top: 0px;
 	opacity: 0.9;
 }
+
+.name a:hover {
+	text-decoration: underline;
+}
+
+.menu a:hover {
+	text-decoration: underline;
+}
+
 
 .projects {
 	background-color: rgba(233,233,233,1);
@@ -260,19 +262,31 @@ figure {
 	width: 100%;
 	opacity: 0.8;
 	background-color: rgba(0,0,0, 0.5);
+	font-variant: small-caps; 
+}
+
+#contact h3 {
+	text-align: center;
+	color: white;
+	font-size: 16px;
+	letter-spacing: 5px;
+	padding-top: 37px;
 }
 
 .icons {
 	text-align: center;
-	padding: 100px 0;
+	padding: 63px 0;
+
 }
 
 .social-links {
+	position: relative;
 	height: 50px;
 	width: 50px;
 	display: inline-block;
-
+	opacity: 1;
 }
+
 
 #mail {
 	background: url(../img/mail.svg) no-repeat;
@@ -307,3 +321,97 @@ footer {
 	line-height: 100px;
 
 }
+
+
+
+
+
+
+/* X-Large Displays: 1400px and up */
+@media (min-width: 1440px) {
+
+}
+
+/* Large Displays: 1280px - 1440px */
+@media (min-width: 1280px) {
+
+}
+
+/* Medium Displays: 768px - 1279px */
+@media (max-width: 940px) {
+
+}
+
+@media (max-width: 768px) {
+
+	}
+
+@media (max-width: 700px){
+	ul li.menu {
+      width: 100%;
+      
+      text-align: center;
+    }
+   .right {
+   	float: none;
+   }
+}	
+
+/* Small screens > 480px */
+@media (max-width: 480px){
+	html {
+		padding-top: 123px;
+	}
+
+	.background {
+	height: 494px;
+}
+	nav {
+		
+	}
+
+}
+
+
+/* About animation */
+
+.animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}.animated.hinge{-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}@-webkit-keyframes tada {
+	0% {-webkit-transform: scale(1);}	10%, 20% {-webkit-transform: scale(0.9) rotate(-3deg);}
+	30%, 50%, 70%, 90% {-webkit-transform: scale(1.1) rotate(3deg);}
+	40%, 60%, 80% {-webkit-transform: scale(1.1) rotate(-3deg);}
+	100% {-webkit-transform: scale(1) rotate(0);}
+}
+
+@-moz-keyframes tada {
+	0% {-moz-transform: scale(1);}	
+	10%, 20% {-moz-transform: scale(0.9) rotate(-3deg);}
+	30%, 50%, 70%, 90% {-moz-transform: scale(1.1) rotate(3deg);}
+	40%, 60%, 80% {-moz-transform: scale(1.1) rotate(-3deg);}
+	100% {-moz-transform: scale(1) rotate(0);}
+}
+
+@-o-keyframes tada {
+	0% {-o-transform: scale(1);}	
+	10%, 20% {-o-transform: scale(0.9) rotate(-3deg);}
+	30%, 50%, 70%, 90% {-o-transform: scale(1.1) rotate(3deg);}
+	40%, 60%, 80% {-o-transform: scale(1.1) rotate(-3deg);}
+	100% {-o-transform: scale(1) rotate(0);}
+}
+
+@keyframes tada {
+	0% {transform: scale(1);}	
+	10%, 20% {transform: scale(0.9) rotate(-3deg);}
+	30%, 50%, 70%, 90% {transform: scale(1.1) rotate(3deg);}
+	40%, 60%, 80% {transform: scale(1.1) rotate(-3deg);}
+	100% {transform: scale(1) rotate(0);}
+}
+
+.tada {
+	-webkit-animation-name: tada;
+	-moz-animation-name: tada;
+	-o-animation-name: tada;
+	animation-name: tada;
+}
+
+
+
