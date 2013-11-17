@@ -11,6 +11,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
+
 .background {
 	height: 400px;
 	/*height: 315px;*/
@@ -238,7 +239,9 @@ figure {
 }
 
 .about-text {
-	padding: 100px 222px;
+	padding: 100px 0;
+	width: 70%;
+	margin: auto;
 
 	
 }
@@ -276,6 +279,7 @@ figure {
 .icons {
 	text-align: center;
 	padding: 63px 0;
+	margin: auto;
 
 }
 
@@ -329,7 +333,10 @@ footer {
 
 /* X-Large Displays: 1400px and up */
 @media (min-width: 1440px) {
-
+	#thumbnails {
+	margin: auto;
+	max-width: 1440px;
+	}
 }
 
 /* Large Displays: 1280px - 1440px */
@@ -349,26 +356,79 @@ footer {
 @media (max-width: 700px){
 	ul li.menu {
       width: 100%;
-      
       text-align: center;
     }
    .right {
    	float: none;
    }
+ .thumbnail-containers {
+ 	margin: auto;
+}
+
+.browser {
+	width: 90%;
+	box-shadow: none;
+	max-width: 500px;
+}
+
+    .thumb {
+	margin: 0 auto 25px;
+	width: 90%;
+	height: 90%;
+	box-shadow: none;
+   }
+
+
+    .thumb figure{
+	width: 100%;
+	height: 100%;
+	max-width: 500px;
+	background-color: transparent;
+   }
+
+   .thumb img{
+	width: 100%;
+	max-width: 500px;
+   }
+
+.social-links {
+
+}
+
+#mail {
+	margin-right: 20px;
+}
+
+#skype {
+	margin-right: 20px;
+}
+
+#google {
+	margin-right: 20px;
+}
+
+
 }	
 
 /* Small screens > 480px */
 @media (max-width: 480px){
-	html {
-		padding-top: 123px;
-	}
 
 	.background {
 	height: 494px;
 }
-	nav {
-		
-	}
+
+#heading h1 {
+	font-size: 35px;
+}
+
+.description {
+	width: 275px;
+}
+
+#heading h2 {
+	font-size: 11.2px;
+}
+
 
 }
 
