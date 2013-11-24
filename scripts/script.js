@@ -1,8 +1,5 @@
 $(document).ready(function() {
 	
-
-
-
 $('.nav').waypoint('sticky');
 
 $(document).foundation();
@@ -24,17 +21,40 @@ $('.menu a').click(function() {
 });
 
 
+// $('#heading').hide().delay('1300').fadeIn('slow');
 
-}); // end of ducumnet ready
+
+  $(function() {
+    $( ".skills-progressbar" ).progressbar({
+      value: 0.1
+    });
+  });
+
+
+
+}); // end of document ready
+
+
+
+
 
 
 $(document).scroll(function(){
     if($(this).scrollTop()>=$('#about').position().top){
         console.log("about");
         $('.about-image').addClass('animated tada')
+  }
+if($(this).scrollTop()>=$('.about-text').position().top){
 
+ $( "#progressbar-html" ).progressbar({ value: 90 });
+$( "#progressbar-css" ).progressbar({ value: 70 });  
+$( "#progressbar-jquery" ).progressbar({ value: 55 });  
+$( "#progressbar-js" ).progressbar({ value: 40 });  
     }
+    
 })
+
+
 
 
 
