@@ -1,62 +1,77 @@
 $(document).ready(function() {
 	
-$('.nav').waypoint('sticky');
+// Random background image
+  var images = ['bg1.jpg', 'bg2.jpg', 'bg3.jpg'];
+  $('body').css({'background' : 'url(img/' + images[Math.floor(Math.random() * images.length)] + ')' + 'center no-repeat fixed'});
 
-$(document).foundation();
+// initiate Foundation top-bar
+  $(document).foundation();
 
+// initiate waypoints
+  $('.nav').waypoint('sticky');
 
-$(".social-links").hover(function() {
-    $(this).animate({
-        bottom: "6px"
-    }, 100);
-}, function() {
-    $(this).animate({
-        bottom: "0px"
-    }, 100)
-});
+// functions to run on load
+  closeMenu()
+  showSkills()
 
+}); // end of document ready
 
+// Close mobile menu when selection has been made
+function closeMenu(){
 $('.menu a').click(function() {
   $('nav').removeClass('expanded');
 });
+}
 
-
-// $('#heading').hide().delay('1300').fadeIn('slow');
-
-
+// Populating skills progress bars
+function showSkills(){
   $(function() {
     $( ".skills-progressbar" ).progressbar({
       value: 0.1
     });
   });
 
+  $('.projects').waypoint(function(direction) {
+    $("#nav-projects").toggleClass('active');
+  });
+
+  $('#about').waypoint(function(direction) {
+    $("#nav-projects").toggleClass('active');
+    $("#nav-about").toggleClass('active');
+  });
+
+  $('#skills').waypoint(function(direction) {
+    $("#nav-about").toggleClass('active');
+    $("#nav-skills").toggleClass('active');
+  });
+
+  $('#progressbar-jquery').waypoint(function(direction) {
+    $("#nav-skills").toggleClass('active');
+    $("#nav-contact").toggleClass('active');
+  });
+}
 
 
-}); // end of document ready
 
-
-
-
-
-
+// Scroll events
 $(document).scroll(function(){
-    if($(this).scrollTop()>=$('#about').position().top){
-        console.log("about");
-        $('.about-image').addClass('animated tada')
+  if($(this).scrollTop()>=$('#about').position().top){
+      $('.about-image').addClass('animated-about pulse')
   }
-if($(this).scrollTop()>=$('.about-text').position().top){
 
- $( "#progressbar-html" ).progressbar({ value: 90 });
-$( "#progressbar-css" ).progressbar({ value: 70 });  
-$( "#progressbar-jquery" ).progressbar({ value: 55 });  
-$( "#progressbar-js" ).progressbar({ value: 40 });  
-    }
-    
+   if($(this).scrollTop()>=$('#skills').position().top){
+    $('.skills-image').addClass('animated-about pulse')
+  }
+
+  if($(this).scrollTop()>=$('.skills-trigger').position().top){
+    $("#progressbar-html" ).progressbar({ value: 90 });
+    $( "#progressbar-css" ).progressbar({ value: 70 });  
+    $( "#progressbar-jquery" ).progressbar({ value: 55 }); 
+    $( "#progressbar-aj" ).progressbar({ value: 50 }); 
+    $( "#progressbar-js" ).progressbar({ value: 45 }); 
+    $( "#progressbar-rwd" ).progressbar({ value: 45 });     
+  }
 })
-
-
-
-
 
 /* Smooth scrolling
    Changes links that link to other parts of this page to scroll

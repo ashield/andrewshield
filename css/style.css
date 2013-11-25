@@ -4,7 +4,6 @@ html, body {
 
 body {
 	font-family: 'Montserrat', sans-serif;
-	background: url(../img/spiral.jpg) center no-repeat fixed;
 	background-size: cover;
 	background-color: black;
 
@@ -21,11 +20,9 @@ body {
 
 #heading {
 	position: relative;
-	top: 190px;
+	top: 200px;
 	text-align: center;
 	font-weight: bold;
-	color: rgba(255, 255, 255, 1);
-
 }
 
 #heading h1 {
@@ -33,12 +30,14 @@ body {
 	font-weight: 700;
 	letter-spacing: 5px;
 	margin: 10px;
+	color: rgba(0, 0, 0, 0.6);
 
 }
 
 #heading h2 {
 	font-size: 16px;
-	letter-spacing: 5px;	
+	letter-spacing: 5px;
+	color: white;
 
 }
 
@@ -54,7 +53,7 @@ body {
 
 nav {
 	height: 50px;
-	background-color: black;
+	background-color: #111111;
 	color: white;
 	width: 100%;
 	z-index: 9999;
@@ -62,7 +61,7 @@ nav {
 }
 
 ul {
-	padding: 0 11%;
+	padding: 0 8%;
 
 }
 
@@ -88,22 +87,39 @@ nav ul li a {
 }
 
 .name a:hover {
-	text-decoration: underline;
+	color: #9E9E9E;
+	-webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
 }
 
 .menu a:hover {
+	color: #9E9E9E;
+	-webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.active a {
+	color: #9E9E9E;
 	text-decoration: underline;
+	-webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
 }
 
 
 .projects {
-	background-color: rgba(233,233,233,1);
+	background-color: rgba(255, 255, 255, 1);
 	
 	
 }
 
 #thumbnails {
-	padding: 120px 0;
+	padding: 80px 0;
 	text-align: center;
 
 	
@@ -119,7 +135,6 @@ nav ul li a {
 	background-color: rgb(221, 221, 221);
 	border-radius: 3px 3px 0 0;
 	width: 500px;
-/*	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);*/
 	z-index: 1000;
 
 
@@ -146,8 +161,8 @@ nav ul li a {
 .thumb {
 	display: inline-block;
 	width: 500px;
-	height: 290px;
-	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+	height: 248px;
+
 }
 
 .thumbnail-containers {
@@ -181,18 +196,20 @@ nav ul li a {
 }
 
 .caption h4 {
+	font-variant: small-caps;
 	text-align: left;
 	padding: 0 10px 10px;
+	font-size: 20px;
 
 }
 
-.caption  p {
+.caption .project-desc {
 	display: block;
 	text-align: left;
 	border-top: thin dotted rgba(0, 0, 0, 0.5);
 	padding: 10px;
-	font-size: 13px;
-	line-height: 20px;
+	font-size: 12px;
+	line-height: 15px;
 	font-weight: 500;
 	width: 90%;
 }
@@ -219,20 +236,22 @@ nav ul li a {
 
 figure {
 	height: 100%;
-	background-color: black;
+
 }
 
 
 
+
 #about {
-	background-color: rgba(255, 255, 255, 1);
-	padding-bottom: 70px;
+	background-color: rgba(233,233,233,1);
+	padding: 80px 0 130px;
 
 }
 
 #about-content {
 	width: 80%;
 	margin: auto;
+	max-width: 1055px;
 }
 
 .about-image {
@@ -241,45 +260,80 @@ figure {
 	width: 200px;
 	height: 214px;
 	margin: auto;
-	top: 80px;
-
+	padding-bottom: 20px;
 
 }
 
 .about-text {
-	padding: 100px 0;
 	margin: auto;
+	border-top: thin double #B6B6B6;
 
 	
 }
-
-#para1 {
-	border-top: thin double #e0e0e0;
-}
-
 .about-text p {
-	text-align: center;
+	text-align: justify;
 	padding-top: 20px;
 	font-size: 16px;
 	line-height: 35px;
 	font-weight: 500;
-	
 
 }
 
-#about h5 {
+.about-text p a {
+
+	color: black;
+}
+#skills {
+	background-color: rgba(255, 255, 255, 1);
+	padding: 55px 0 130px;
+}
+
+#skills-content {
+	width: 80%;
+	margin: auto;
+	max-width: 1055px;
+}
+
+.skills-image {
+	background: url(../img/skills.svg) no-repeat;
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin: auto;
+
+
+}
+
+#skills h5 {
 	padding: 10px 0 5px;
 }
 
-.skills-bars {
 
-}
 
 .skills-progressbar{
 	width: 100%;
 	margin: auto;
 	border-radius: 13px;
 }
+
+
+.ui-progressbar .ui-progressbar-value {
+    margin: -1px;
+    height: 100%;
+    transition: width 1.0s;
+    -webkit-transition: width 1.0s;
+}
+
+
+.ui-progressbar {
+height: 30px
+}
+
+.ui-widget-header {
+	border-radius: 13px;
+	border: 1px solid #cccccc;
+}
+
 
 #contact {
 	height: 350px;
@@ -310,13 +364,21 @@ figure {
 	width: 50px;
 	display: inline-block;
 	opacity: 1;
+	-webkit-transition: -webkit-transform 0.25s;
+	-moz-transition: -moz-transform 0.25s;
 }
 
 
 #mail {
 	background: url(../img/mail.svg) no-repeat;
-	margin-right: 100px;
-	
+	margin-right: 100px;	
+}
+
+.social-links:hover {
+	-webkit-transform: translateY(-8px);
+  -moz-transform: translateY(-8px);
+  -ms-transform: translateY(-8px);
+  transform: translateY(-8px);
 }
 
 #skype {
@@ -337,7 +399,7 @@ figure {
 
 footer {
 	height: 100px;
-	background-color: rgb(0,0,0);
+	background-color: #111111;
 	opacity: 1;
 	font-size: 10px;
 	text-align: center;
@@ -382,6 +444,8 @@ footer {
    .right {
    	float: none;
    }
+
+
  .thumbnail-containers {
  	margin: auto;
 }
@@ -465,68 +529,74 @@ footer {
   -ms-transform: translateY(0);
   transform: translateY(0);
   }
+#skills h5 {
+	text-align: center;
+}
 
 
 }
+
+/* Heading animation */
+.animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:4s;-moz-animation-duration:4s;-ms-animation-duration:4s;-o-animation-duration:4s;animation-duration:4s;}.animated.hinge{-webkit-animation-duration:4s;-moz-animation-duration:4s;-ms-animation-duration:4s;-o-animation-duration:4s;animation-duration:4s;}@-webkit-keyframes fadeIn {
+	0% {opacity: 0;}	100% {opacity: 1;}
+}
+
+@-moz-keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+@-o-keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+.fadeIn {
+	-webkit-animation-name: fadeIn;
+	-moz-animation-name: fadeIn;
+	-o-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+
+
+
 
 
 /* About animation */
-
-.animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}.animated.hinge{-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}@-webkit-keyframes tada {
-	0% {-webkit-transform: scale(1);}	10%, 20% {-webkit-transform: scale(0.9) rotate(-3deg);}
-	30%, 50%, 70%, 90% {-webkit-transform: scale(1.1) rotate(3deg);}
-	40%, 60%, 80% {-webkit-transform: scale(1.1) rotate(-3deg);}
-	100% {-webkit-transform: scale(1) rotate(0);}
+.animated-about{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;}.animated.hinge{-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;}@-webkit-keyframes pulse {
+    0% { -webkit-transform: scale(1); }	50% { -webkit-transform: scale(1.1); }
+    100% { -webkit-transform: scale(1); }
+}
+@-moz-keyframes pulse {
+    0% { -moz-transform: scale(1); }	
+	50% { -moz-transform: scale(1.1); }
+    100% { -moz-transform: scale(1); }
+}
+@-o-keyframes pulse {
+    0% { -o-transform: scale(1); }	
+	50% { -o-transform: scale(1.1); }
+    100% { -o-transform: scale(1); }
+}
+@keyframes pulse {
+    0% { transform: scale(1); }	
+	50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
 }
 
-@-moz-keyframes tada {
-	0% {-moz-transform: scale(1);}	
-	10%, 20% {-moz-transform: scale(0.9) rotate(-3deg);}
-	30%, 50%, 70%, 90% {-moz-transform: scale(1.1) rotate(3deg);}
-	40%, 60%, 80% {-moz-transform: scale(1.1) rotate(-3deg);}
-	100% {-moz-transform: scale(1) rotate(0);}
-}
-
-@-o-keyframes tada {
-	0% {-o-transform: scale(1);}	
-	10%, 20% {-o-transform: scale(0.9) rotate(-3deg);}
-	30%, 50%, 70%, 90% {-o-transform: scale(1.1) rotate(3deg);}
-	40%, 60%, 80% {-o-transform: scale(1.1) rotate(-3deg);}
-	100% {-o-transform: scale(1) rotate(0);}
-}
-
-@keyframes tada {
-	0% {transform: scale(1);}	
-	10%, 20% {transform: scale(0.9) rotate(-3deg);}
-	30%, 50%, 70%, 90% {transform: scale(1.1) rotate(3deg);}
-	40%, 60%, 80% {transform: scale(1.1) rotate(-3deg);}
-	100% {transform: scale(1) rotate(0);}
-}
-
-.tada {
-	-webkit-animation-name: tada;
-	-moz-animation-name: tada;
-	-o-animation-name: tada;
-	animation-name: tada;
+.pulse {
+	-webkit-animation-name: pulse;
+	-moz-animation-name: pulse;
+	-o-animation-name: pulse;
+	animation-name: pulse;
 }
 
 
-.ui-progressbar .ui-progressbar-value {
-    margin: -1px;
-    height: 100%;
-    transition: width 1.0s;
-    -webkit-transition: width 1.0s;
-}
 
-
-.ui-progressbar {
-height: 30px
-}
-
-.ui-widget-header {
-	border-radius: 13px;
-	border: 1px solid #cccccc;
-}
 
 
 

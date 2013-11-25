@@ -53,8 +53,7 @@
           -webkit-box-shadow: 0 10px 0 1px white, 0 16px 0 1px white, 0 22px 0 1px white;
           box-shadow: 0 10px 0 1px white, 0 16px 0 1px white, 0 22px 0 1px white; }
   .top-bar.expanded {
-    height: auto;
-    opacity: inherit; }
+    height: auto; }
     .top-bar.expanded .title-area {
       background: #111111; }
     .top-bar.expanded .toggle-topbar a {
@@ -81,15 +80,11 @@
 .js-generated {
   display: block; }
 
-@media (min-width: 700px) {
-  
-
-
-
+@media (min-width: 701px) {
   .top-bar {
     background: #111111;
     *zoom: 1;
-    overflow: visible; }
+    /*overflow: visible;*/ }
     .top-bar:before, .top-bar:after {
       content: " ";
       display: table; }
@@ -147,6 +142,6 @@
     background: #090909;
     color: white; }
 
-
+}
 
 
