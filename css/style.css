@@ -5,7 +5,6 @@ html, body {
 body {
 	font-family: 'Montserrat', sans-serif;
 	background-size: cover;
-	background-color: black;
 
 }
 
@@ -271,7 +270,7 @@ figure {
 	
 }
 .about-text p {
-	text-align: justify;
+	text-align: left;
 	padding-top: 20px;
 	font-size: 16px;
 	line-height: 35px;
@@ -502,8 +501,13 @@ footer {
 /* Small screens > 480px */
 @media (max-width: 480px){
 
-	.background {
-	height: 494px;
+body {
+	/*background-image: url(../img/bg2.jpg);*/
+	
+}
+
+#heading {
+	top: 100px;
 }
 
 #heading h1 {

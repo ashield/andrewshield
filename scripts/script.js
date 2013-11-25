@@ -2,9 +2,9 @@ $(document).ready(function() {
 	
 // Random background image
   var images = ['bg1.jpg', 'bg2.jpg', 'bg3.jpg'];
-  $('body').css({'background' : 'url(img/' + images[Math.floor(Math.random() * images.length)] + ')' + 'center no-repeat fixed'});
-
-// initiate Foundation top-bar
+  $('body').css({'background' : 'url(img/' + images[Math.floor(Math.random() * images.length)] + ')'});
+  $('body').css({'background-size' : 'cover' , 'background-repeat' : 'no-repeat' , 'background-position' : 'center' , 'background-attachment' : 'fixed' })
+// // initiate Foundation top-bar
   $(document).foundation();
 
 // initiate waypoints
