@@ -2,8 +2,8 @@ $(document).ready(function() {
 	
 // Random background image
   var images = ['bg1.jpg', 'bg2.jpg', 'bg3.jpg'];
-  $('body').css({'background' : 'url(img/' + images[Math.floor(Math.random() * images.length)] + ')'});
-  $('body').css({'background-size' : 'cover' , 'background-repeat' : 'no-repeat' , 'background-position' : 'center' , 'background-attachment' : 'fixed' })
+  $('.bg').css({'background' : 'url(img/' + images[Math.floor(Math.random() * images.length)] + ')'});
+  $('.bg').css({'background-repeat' : 'no-repeat' , 'background-position' : 'center' })
 // // initiate Foundation top-bar
   $(document).foundation();
 
@@ -13,6 +13,8 @@ $(document).ready(function() {
 // functions to run on load
   closeMenu()
   showSkills()
+
+
 
 }); // end of document ready
 
@@ -33,33 +35,33 @@ function showSkills(){
 
   $('.projects').waypoint(function(direction) {
     $("#nav-projects").toggleClass('active');
-  });
+  }, { offset: '50' });
 
   $('#about').waypoint(function(direction) {
     $("#nav-projects").toggleClass('active');
     $("#nav-about").toggleClass('active');
-  });
+  }, { offset: '50' });
 
   $('#skills').waypoint(function(direction) {
     $("#nav-about").toggleClass('active');
     $("#nav-skills").toggleClass('active');
-  });
+  }, { offset: '50' });
 
   $('#progressbar-jquery').waypoint(function(direction) {
     $("#nav-skills").toggleClass('active');
     $("#nav-contact").toggleClass('active');
-  });
+  }, { offset: '50' });
 }
 
 
 
 // Scroll events
 $(document).scroll(function(){
-  if($(this).scrollTop()>=$('#about').position().top){
+  if($(this).scrollTop()>=$('#about').offset().top - 50){
       $('.about-image').addClass('animated-about pulse')
   }
 
-   if($(this).scrollTop()>=$('#skills').position().top){
+   if($(this).scrollTop()>=$('#skills').offset().top - 50){
     $('.skills-image').addClass('animated-about pulse')
   }
 
