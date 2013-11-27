@@ -7,7 +7,6 @@ body {
 	background-size: cover !important;
 	background-attachment: fixed !important;
 	display: block;
-
 }
 
 .bg {
@@ -29,7 +28,6 @@ body {
 	display: block;
 }
 
-
 #heading {
 	position: relative;
 	top: 200px;
@@ -43,14 +41,12 @@ body {
 	letter-spacing: 5px;
 	margin: 10px;
 	color: rgba(0, 0, 0, 0.6);
-
 }
 
 #heading h2 {
 	font-size: 16px;
 	letter-spacing: 5px;
 	color: white;
-
 }
 
 .description {
@@ -62,29 +58,23 @@ body {
 	opacity: 0.6;
 }
 
-
 nav {
 	height: 50px;
 	background-color: #111111;
 	color: white;
 	width: 100%;
 	z-index: 9999;
-
 }
 
 ul {
 	padding: 0 8%;
-
 }
-
 
 nav ul li {
 	display: inline-block;
 	line-height: 50px;
 	padding: 0 13px;
 	font-variant: small-caps;
-
-
 }
 
 nav ul li a {
@@ -123,20 +113,14 @@ nav ul li a {
     transition: all 0.3s linear;
 }
 
-
 .projects {
-	background-color: rgba(255, 255, 255, 1);
-	
-	
+	background-color: rgba(255, 255, 255, 1);	
 }
 
 #thumbnails {
 	padding: 80px 0;
-	text-align: center;
-
-	
+	text-align: center;	
 }
-
 
 .browser {
 	margin: auto;
@@ -148,8 +132,6 @@ nav ul li a {
 	border-radius: 3px 3px 0 0;
 	width: 500px;
 	z-index: 1000;
-
-
 }
 
 .browser:after {
@@ -165,8 +147,6 @@ nav ul li a {
 .thumbnail-containers{
 	display: inline-block;
 	margin: 20px 25px;
-
-
 }
 
 
@@ -174,7 +154,6 @@ nav ul li a {
 	display: inline-block;
 	width: 500px;
 	height: 248px;
-
 }
 
 .thumbnail-containers {
@@ -188,7 +167,6 @@ nav ul li a {
 	-webkit-transition: -webkit-transform 0.4s, opacity 0.5s;
 	-moz-transition: -moz-transform 0.4s, opacity 0.5s;
 }
-
 
 .caption {
 	position: absolute;
@@ -212,7 +190,6 @@ nav ul li a {
 	text-align: left;
 	padding: 0 10px 10px;
 	font-size: 20px;
-
 }
 
 .caption .project-desc {
@@ -226,14 +203,13 @@ nav ul li a {
 	width: 90%;
 }
 
-
 .thumb:hover img  {
   opacity: 0.5;
   -webkit-transform: translateY(-30px);
   -moz-transform: translateY(-30px);
   -ms-transform: translateY(-30px);
   transform: translateY(-30px);
-  }
+}
 
  .thumb:hover .caption {
   opacity: 1;
@@ -248,11 +224,7 @@ nav ul li a {
 
 figure {
 	height: 100%;
-
 }
-
-
-
 
 #about {
 	background-color: rgba(233,233,233,1);
@@ -273,28 +245,26 @@ figure {
 	height: 214px;
 	margin: auto;
 	padding-bottom: 20px;
-
 }
 
 .about-text {
 	margin: auto;
 	border-top: thin double #B6B6B6;
-
-	
 }
+
 .about-text p {
 	text-align: left;
 	padding-top: 20px;
 	font-size: 16px;
 	line-height: 35px;
 	font-weight: 500;
-
 }
 
 .about-text p a {
-
 	color: black;
+	font-weight: 700;
 }
+
 #skills {
 	background-color: rgba(255, 255, 255, 1);
 	padding: 55px 0 130px;
@@ -312,22 +282,17 @@ figure {
 	width: 200px;
 	height: 200px;
 	margin: auto;
-
-
 }
 
 #skills h5 {
 	padding: 10px 0 5px;
 }
 
-
-
 .skills-progressbar{
 	width: 100%;
 	margin: auto;
 	border-radius: 13px;
 }
-
 
 .ui-progressbar .ui-progressbar-value {
     margin: -1px;
@@ -336,16 +301,14 @@ figure {
     -webkit-transition: width 1.0s;
 }
 
-
 .ui-progressbar {
-height: 30px
+	height: 30px
 }
 
 .ui-widget-header {
 	border-radius: 13px;
 	border: 1px solid #cccccc;
 }
-
 
 #contact {
 	height: 350px;
@@ -366,7 +329,6 @@ height: 30px
 	text-align: center;
 	padding: 63px 0;
 	margin: auto;
-
 }
 
 .social-links {
@@ -378,7 +340,6 @@ height: 30px
 	-webkit-transition: -webkit-transform 0.25s;
 	-moz-transition: -moz-transform 0.25s;
 }
-
 
 #mail {
 	background: url(../img/mail.svg) no-repeat;
@@ -406,8 +367,6 @@ height: 30px
 	background: url(../img/linkedin.svg) no-repeat;
 }
 
-
-
 footer {
 	height: 100px;
 	background-color: #111111;
@@ -417,139 +376,104 @@ footer {
 	position: bottom fixed;
 	color: rgba(255, 255, 255, 1);
 	line-height: 100px;
-
 }
-
-
-
-
-
 
 /* X-Large Displays: 1400px and up */
 @media (min-width: 1440px) {
 	#thumbnails {
-	margin: auto;
-	max-width: 1440px;
+		margin: auto;
+		max-width: 1440px;
 	}
 }
-
-/* Large Displays: 1280px - 1440px */
-@media (min-width: 1280px) {
-
-}
-
-/* Medium Displays: 768px - 1279px */
-@media (max-width: 940px) {
-
-}
-
-@media (max-width: 768px) {
-
-	}
 
 @media (max-width: 700px){
 	ul li.menu {
-      width: 100%;
-      text-align: center;
+    	width: 100%;
+     	text-align: center;
     }
-   .right {
-   	float: none;
-   }
+    .right {
+    	float: none;
+   	}
 
 
- .thumbnail-containers {
- 	margin: 0 auto 16px;
-}
+ 	.thumbnail-containers {
+ 		margin: 0 auto 16px;
+	}
 
-.browser {
-	width: 90%;
-	box-shadow: none;
-	max-width: 500px;
-}
+	.browser {
+		width: 90%;
+		box-shadow: none;
+		max-width: 500px;
+	}
 
     .thumb {
-	margin: 0 auto 25px;
-	width: 90%;
-	height: 90%;
-	box-shadow: none;
+		margin: 0 auto 25px;
+		width: 90%;
+		height: 90%;
+		box-shadow: none;
    }
 
-
     .thumb figure{
-	width: 100%;
-	height: 100%;
-	max-width: 500px;
-
+		width: 100%;
+		height: 100%;
+		max-width: 500px;
    }
 
    .thumb img{
-	width: 100%;
-	max-width: 500px;
+		width: 100%;
+		max-width: 500px;
    }
 
    .caption {
    		width: 90%;
    }
 
-.social-links {
+	#mail {
+		margin-right: 20px;
+	}
 
-}
+	#skype {
+		margin-right: 20px;
+	}
 
-#mail {
-	margin-right: 20px;
-}
-
-#skype {
-	margin-right: 20px;
-}
-
-#google {
-	margin-right: 20px;
-}
-
-
+	#google {
+		margin-right: 20px;
+	}
 }	
 
 /* Small screens > 480px */
 @media (max-width: 480px){
+	#heading {
+		top: 100px;
+	}
 
-body {
-	/*background-image: url(../img/bg2.jpg);*/
-	
-}
+	#heading h1 {
+		font-size: 35px;
+	}
 
-#heading {
-	top: 100px;
-}
+	.description {
+		width: 275px;
+	}
 
-#heading h1 {
-	font-size: 35px;
-}
+	#heading h2 {
+		font-size: 11.2px;
+	}
 
-.description {
-	width: 275px;
-}
+	.caption {
+		display: none;
+	}
 
-#heading h2 {
-	font-size: 11.2px;
-}
-
-.caption {
-	display: none;
-}
-
-.thumb:hover img  {
+	.thumb:hover img  {
 	opacity: 1;
-  -webkit-transform: translateY(0);
-  -moz-transform: translateY(0);
-  -ms-transform: translateY(0);
-  transform: translateY(0);
-  }
-#skills h5 {
-	text-align: center;
-}
+	  -webkit-transform: translateY(0);
+	  -moz-transform: translateY(0);
+	  -ms-transform: translateY(0);
+	  transform: translateY(0);
+	 }
 
-
+	#skills h5 {
+		text-align: center;
+	}
 }
 
 /* Heading animation */
@@ -578,10 +502,6 @@ body {
 	-o-animation-name: fadeIn;
 	animation-name: fadeIn;
 }
-
-
-
-
 
 /* About animation */
 .animated-about{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;}.animated.hinge{-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;}@-webkit-keyframes pulse {

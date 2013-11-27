@@ -67,11 +67,11 @@ $(document).scroll(function(){
 
   if($(this).scrollTop()>=$('.skills-trigger').position().top){
     $("#progressbar-html" ).progressbar({ value: 90 });
-    $( "#progressbar-css" ).progressbar({ value: 70 });  
-    $( "#progressbar-jquery" ).progressbar({ value: 55 }); 
+    $( "#progressbar-css" ).progressbar({ value: 75 });  
+    $( "#progressbar-jquery" ).progressbar({ value: 65 });
+    $( "#progressbar-js" ).progressbar({ value: 60 }); 
     $( "#progressbar-aj" ).progressbar({ value: 50 }); 
-    $( "#progressbar-js" ).progressbar({ value: 45 }); 
-    $( "#progressbar-rwd" ).progressbar({ value: 45 });     
+    $( "#progressbar-rwd" ).progressbar({ value: 50 });     
   }
 })
 
