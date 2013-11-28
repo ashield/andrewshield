@@ -14,8 +14,6 @@ $(document).ready(function() {
   closeMenu()
   showSkills()
 
-
-
 }); // end of document ready
 
 // Close mobile menu when selection has been made
@@ -52,8 +50,6 @@ function showSkills(){
     $("#nav-contact").toggleClass('active');
   }, { offset: '50' });
 }
-
-
 
 // Scroll events
 $(document).scroll(function(){

@@ -190,12 +190,12 @@ nav ul li a {
 	text-align: left;
 	padding: 0 10px 10px;
 	font-size: 20px;
+	border-bottom: thin dotted rgba(0, 0, 0, 0.5);
 }
 
 .caption .project-desc {
 	display: block;
 	text-align: left;
-	border-top: thin dotted rgba(0, 0, 0, 0.5);
 	padding: 10px;
 	font-size: 12px;
 	line-height: 15px;
@@ -439,6 +439,7 @@ footer {
 	#google {
 		margin-right: 20px;
 	}
+
 }	
 
 /* Small screens > 480px */
@@ -530,6 +531,8 @@ footer {
 	-o-animation-name: pulse;
 	animation-name: pulse;
 }
+
+
 
 
 
